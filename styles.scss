@@ -2,3 +2,18 @@ body {
   margin: 0;
   padding: 0;
 }
+@mixin button-styles {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+}
+.btn {
+  width: 50px;
+  height: 25px;
+  margin: 30px;
+  @include button-styles;
+  background-color: #007bff;
+  color: #fff;
+}
